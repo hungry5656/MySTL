@@ -1,3 +1,5 @@
-#ignore testfile
-test
+# ignore cmake-build-debug folder
+cmake-build-debug-wsl
 
+# ignore .idea
+.idea
