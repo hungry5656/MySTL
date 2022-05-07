@@ -2,4 +2,8 @@
 cmake-build-debug-wsl
 
 # ignore .idea
-.idea
+**/.*
+.*
+
+# keep track of .gitignore
+!.gitignore
