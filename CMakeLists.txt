@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.13)
-project(MySTL)
+project(MySTL CXX)
 set(CMAKE_CXX_STANDARD 14)
 
 # version
@@ -32,5 +32,4 @@ endif()
 
 message(STATUS "The cmake_cxx_flags is: ${CMAKE_CXX_FLAGS}")
 
-add_subdirectory(${PROJECT_SOURCE_DIR}/src)
 add_subdirectory(${PROJECT_SOURCE_DIR}/testing)

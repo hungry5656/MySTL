@@ -27,7 +27,9 @@ else()
 endif()
 
 set(APP_SRC testing.cpp)
+set(APP_SRC2 manualTest.cpp)
 add_executable(STL_gtest ${APP_SRC})
+add_executable(STL_manual_test ${APP_SRC2})
 
 #these aren't technically needed for google test to build
 #but for CLion to stop complaining
