@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.13)
+cmake_minimum_required(VERSION 3.20)
 project(STL_gtest)
 set(CMAKE_CXX_STANDARD 14)
 
@@ -26,7 +26,7 @@ else()
     add_subdirectory(googletest)
 endif()
 
-set(APP_SRC testing.cpp)
+set(APP_SRC testing.cpp array_test.h ../src/array.h)
 set(APP_SRC2 manualTest.cpp)
 add_executable(STL_gtest ${APP_SRC})
 add_executable(STL_manual_test ${APP_SRC2})
@@ -49,3 +49,4 @@ target_link_libraries(STL_gtest
         )
 
 target_compile_options(STL_gtest PRIVATE -Wall -Werror -Wextra)
+target_compile_options(STL_manual_test PRIVATE -Wall -Werror -Wextra)
